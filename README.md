@@ -21,7 +21,6 @@ The framework is designed with maintainability and reusability in mind and can b
 | ExtentReports | Test reporting |
 | Allure Reports | Test execution reporting |
 | Log4j | Application/test logging |
-| JavaFaker | Test data generation |
 | Git / GitHub | Version control |
 | GitHub Actions | CI/CD automation |
 
@@ -42,27 +41,45 @@ The project uses the following key dependencies:
 ```text
 NewSwagLab_Project
 │
-├── .github
-│   └── workflows
+├── .github/
+│   └── workflows/
+│       └── automation.yml
 │
-├── Drivers
-├── Reports
-├── Screenshots
-├── TestData
-├── XMLFiles
-├── logs
+├── src/
+│   └── test/
+│       ├── java/
+│       │   ├── base/
+│       │   ├── pages/
+│       │   ├── tests/
+│       │   └── utilities/
+│       │
+│       └── resources/
+│           ├── config/
+│           └── testdata/
 │
-├── src
-│   └── test
-│       └── java
+├── Drivers/
 │
-├── target
-├── test-output
+├── Reports/
+│
+├── Screenshots/
+│
+├── TestData/
+│
+├── XMLFiles/
+│   ├── testng.xml
+│   └── regression.xml
+│
+├── logs/
+│
+├── target/
+│
+├── test-output/
 │
 ├── pom.xml
 ├── .gitignore
 ├── LICENSE
 └── README.md
+
 🧪 Testing Scope
 
 The automation framework covers functional testing scenarios such as:
@@ -77,6 +94,7 @@ Checkout functionality
 Form validation
 Order completion
 Negative test scenarios
+
 🔧 Framework Features
 Selenium WebDriver automation
 Java
@@ -94,6 +112,7 @@ Allure Reports
 Log4j logging
 Git/GitHub
 GitHub Actions
+
 🚀 How to Run
 Clone the Repository
 git clone https://github.com/shashika011/NewSwagLab_Project.git
@@ -103,6 +122,7 @@ Install Dependencies
 mvn clean install
 Run Tests
 mvn test
+
 📊 Test Reports
 
 The project supports:
@@ -118,13 +138,13 @@ allure generate target/allure-results --clean -o allure-report
 Then open the report:
 
 allure open allure-report
-🔄 CI/CD
 
+🔄 CI/CD
 The project includes a GitHub Actions workflow for executing automated tests as part of a CI/CD pipeline.
 
 Workflow files are maintained under:
-
 .github/workflows/
+
 🎯 Skills Demonstrated
 Selenium WebDriver
 Java
@@ -139,6 +159,7 @@ Test Reporting
 Logging
 Git & GitHub
 CI/CD
+
 👨‍💻 Author
 
 Shashika Thilan
