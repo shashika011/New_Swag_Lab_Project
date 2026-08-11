@@ -1,9 +1,7 @@
 📌 Project Overview
 
 This project is an end-to-end web automation testing framework developed using Selenium WebDriver, Java, TestNG, and Maven.
-
 The project automates functional test scenarios for the Swag Labs web application and demonstrates practical implementation of UI automation, test data management, reporting, logging, and CI/CD execution.
-
 The framework is designed with maintainability and reusability in mind and can be extended with additional test scenarios and automation utilities.
 
 🛠️ Technologies & Tools
