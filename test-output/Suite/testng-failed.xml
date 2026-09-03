@@ -4,40 +4,21 @@
   <listeners>
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
   </listeners>
-  <test thread-count="5" name="Testchrome(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.swaglabtest.testcases.BrokenLinkTest">
-        <methods>
-          <include name="brokenLinkTestLoginPage"/>
-          <include name="startTest"/>
-          <include name="PageIninitialize"/>
-          <include name="teardownSuite"/>
-          <include name="brokenLinkTestPurchasePage"/>
-          <include name="setupSuite"/>
-          <include name="teardownClass"/>
-          <include name="tearDownMethod"/>
-          <include name="setupClass"/>
-        </methods>
-      </class> <!-- com.swaglabtest.testcases.BrokenLinkTest -->
-    </classes>
-  </test> <!-- Testchrome(failed) -->
   <test thread-count="5" name="Testfirefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.swaglabtest.testcases.BrokenLinkTest">
+      <class name="com.swaglabtest.testcases.SeccurityTest">
         <methods>
-          <include name="brokenLinkTestLoginPage"/>
           <include name="startTest"/>
-          <include name="PageIninitialize"/>
+          <include name="checkLogoutUser"/>
           <include name="teardownSuite"/>
-          <include name="brokenLinkTestPurchasePage"/>
+          <include name="PageIninitialize"/>
           <include name="setupSuite"/>
           <include name="teardownClass"/>
           <include name="setupClass"/>
           <include name="tearDownMethod"/>
         </methods>
-      </class> <!-- com.swaglabtest.testcases.BrokenLinkTest -->
+      </class> <!-- com.swaglabtest.testcases.SeccurityTest -->
     </classes>
   </test> <!-- Testfirefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->
